@@ -42,7 +42,7 @@ int main() {
 
             if (k > 0 && k > prefixLength) {
                 prefixLength = k;
-            }
+            } 
         }
     }
 
