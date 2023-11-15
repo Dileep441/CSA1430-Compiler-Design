@@ -1,0 +1,22 @@
+%%
+[A-Z]+[\t\n ] { printf("%s is a capital word\n",yytext); }
+.  ;
+%%
+
+int main( ) 
+{
+	printf("Enter String :\n");
+	yylex();
+}
+int yywrap( )
+{
+	return 1;
+}
+
+
+OUTPUT:
+Enter String :
+MURALI is a BOY
+MURALI is a capital word
+BOY
+ is a capital word
